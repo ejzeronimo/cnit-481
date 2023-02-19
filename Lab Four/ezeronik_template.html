@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jane Doe Resume (example)</title>
+    <style>
+
+        body {
+            padding: 0 5vw 0 5vw;
+        }
+
+        header {
+            text-align: center;
+            background-color: burlywood;
+            padding: 2vh 0 2vh 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+
+        section:first-of-type {
+            width: 67%;
+            min-width: 600px;
+        }
+
+        section:nth-of-type(2){
+            width: 33%;
+            min-width: 200px;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 0;
+        }
+
+        nav>ul>li {
+            list-style-type: none;
+            background-color: burlywood;
+            border-radius: .5em;
+            padding: .5em 1em;
+        }
+
+        nav>ul>li>a {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header role="banner">
+        <h1>Jane Doe</h1>
+        <p>Professional Title</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profile">Professional Summary</a></li>
+            <li><a href="#work">Work Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <article id="profile">
+                <h2>Professional Summary</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid natus commodi dolores quaerat
+                    ducimus officia saepe architecto sed amet eveniet, ratione consequatur iure magnam, possimus nulla
+                    dolorem, pariatur vitae? Sequi!</p>
+            </article>
+            <article id="work">
+                <h2>Work Experience</h2>
+                <div>
+                    <h3>Job Position 1</h3>
+                    <div><span>Company</span> | <span>Location</span> | <span>Duration</span></div>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                            <li>Quo officiis repellat natus pariatur reprehenderit quisquam, nulla voluptas veritatis
+                                eius perferendis itaque maiores unde accusamus neque rerum laborum sit laboriosam vel?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Job Position 2</h3>
+                    <div><span>Company</span> | <span>Location</span> | <span>Duration</span></div>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                            <li>Quo officiis repellat natus pariatur reprehenderit quisquam, nulla voluptas veritatis
+                                eius perferendis itaque maiores unde accusamus neque rerum laborum sit laboriosam vel?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+            <article id="projects">
+                <h2>Projects</h2>
+                <div>
+                    <h3>Project Title 1</h3>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                            <li>Quo officiis repellat natus pariatur reprehenderit quisquam, nulla voluptas veritatis
+                                eius perferendis itaque maiores unde accusamus neque rerum laborum sit laboriosam vel?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <h3>Project Title 1</h3>
+                    <div>
+                        <ul>
+                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </li>
+                            <li>Quo officiis repellat natus pariatur reprehenderit quisquam, nulla voluptas veritatis
+                                eius perferendis itaque maiores unde accusamus neque rerum laborum sit laboriosam vel?
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article id="education">
+                <a name="anchorname"></a>
+                <h2>Education</h2>
+                <div>
+                    <h3>Degree 1</h3>
+                    <div><span>School</span> | <span>Major</span> | <span>Duration</span></div>
+                </div>
+                <div>
+                    <h3>Degree 2</h3>
+                    <div><span>School</span> | <span>Major</span> | <span>Duration</span></div>
+                </div>
+            </article>
+            <article id="courses">
+                <h2>Relevant Courses</h2>
+                <ul>
+                    <li>Course 1</li>
+                    <li>Course 2</li>
+                </ul>
+            </article>
+            <article id="skills">
+                <h2>Skills</h2>
+                <div>
+                    <h3>Professional</h3>
+                    <ul>
+                        <li>Professional skill 1</li>
+                        <li>Professional skill 2</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Technical</h3>
+                    <ul>
+                        <li>Technical skill 1</li>
+                        <li>Technical skill 2</li>
+                    </ul>
+                </div>
+            </article>
+            <article id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Phone Number</li>
+                    <li>Email</li>
+                    <li>Address</li>
+                    <li>Website</li>
+                </ul>
+            </article>
+            </article>
+            <aside>
+            </aside>
+    </main>
+
+    <footer>
+        <small>&copy; Copyright 2022, Jane Doe</small>
+    </footer>
+</body>
+
+</html>
