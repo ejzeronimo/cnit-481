@@ -1,0 +1,54 @@
+body {
+    background-color: #635985;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* https://colorhunt.co/palette/635985443c6839305318122b
+https://blushing-galleon-536.notion.site/Lab-4-Style-Your-Resume-014b2d3457e1424db43f566eafbe75c5 */
+
+.card {
+    background-color: #443C68;
+    border-radius: 1em;
+}
+
+header {
+    width: fit-content;
+
+    text-align: left;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+section:first-of-type {
+    width: 67%;
+    min-width: 600px;
+}
+
+section:nth-of-type(2) {
+    width: 33%;
+    min-width: 200px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav>ul>li {
+    list-style-type: none;
+    background-color: burlywood;
+    border-radius: .5em;
+    padding: .5em 1em;
+}
+
+nav>ul>li>a {
+    color: black;
+    text-decoration: none;
+}
