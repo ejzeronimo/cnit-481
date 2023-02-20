@@ -1,54 +1,122 @@
+/* NOTE: style for page wide effect */
 body {
-    background-color: #635985;
+    --light: #635985;
+    --normal: #443C68;
+    --medium: #393053;
+    --dark: #18122B;
+
+    background-color: var(--light);
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0% 5vw;
 }
 
-/* https://colorhunt.co/palette/635985443c6839305318122b
-https://blushing-galleon-536.notion.site/Lab-4-Style-Your-Resume-014b2d3457e1424db43f566eafbe75c5 */
-
+/* NOTE: universal classes */
 .card {
-    background-color: #443C68;
+    background-color: var(--normal);
     border-radius: 1em;
-}
-
-header {
-    width: fit-content;
-
-    text-align: left;
     padding: 1em;
 }
 
-main {
+#navigation {
     display: flex;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    padding: 1em 0 0;
+    margin: auto;
+    gap: 1em;
 }
 
-section:first-of-type {
-    width: 67%;
-    min-width: 600px;
-}
-
-section:nth-of-type(2) {
-    width: 33%;
-    min-width: 200px;
-}
-
-nav>ul {
-    display: flex;
-    justify-content: space-around;
-    padding: 0;
-}
-
-nav>ul>li {
+#navigation>li {
     list-style-type: none;
-    background-color: burlywood;
+    background-color: var(--medium);
     border-radius: .5em;
     padding: .5em 1em;
 }
 
-nav>ul>li>a {
-    color: black;
+#navigation>li>a {
+    color: white;
     text-decoration: none;
+}
+
+#navigation>li:hover {
+    background-color: var(--dark);
+}
+
+#navigation>li:active {
+    background-color: var(--medium);
+}
+
+/* NOTE: styles for site header */
+header {
+    margin: auto;
+    width: calc(100% - 2em);
+}
+
+#title {
+    width: 100%;
+    text-align: center;
+}
+
+#title>* {
+    margin: 0;
+}
+
+/* NOTE: main area style */
+main {
+    padding: 0 5vw;
+}
+
+#experience {
+    display: flex;
+    gap: 1em;
+}
+
+@media (max-width: 1280px) {
+    #experience {
+        flex-wrap: wrap;
+    }
+}
+
+#experience>div {
+    flex-shrink: 1;
+    flex-grow: 1;
+    padding: .5em;
+}
+
+/* NOTE: footer style */
+footer {
+    text-align: center;
+}
+
+#external-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: fit-content;
+    padding: 1em 0 0;
+    margin: auto;
+    gap: 1em;
+    font-size: .9em;
+}
+
+#external-links>li {
+    list-style-type: none;
+    background-color: var(--normal);
+    border-radius: .5em;
+    padding: .5em 1em;
+}
+
+#external-links>li>a {
+    color: white;
+    text-decoration: none;
+}
+
+#external-links>li:hover {
+    background-color: var(--medium);
+}
+
+#external-links>li:active {
+    background-color: var(--normal);
 }

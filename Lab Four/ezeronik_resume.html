@@ -13,94 +13,93 @@
 
 <body>
     <header role="banner" class="card">
-        <h1> Ebony Moore </h1>
-        <p> Senior Software Engineer with breadth of knowledge </p>
-    </header>
+        <div id="title">
+            <h1> Ebony Moore </h1>
+            <p> Senior Software Engineer with breadth of knowledge </p>
+        </div>
 
-    <nav>
-        <ul>
+        <ul id="navigation">
             <li><a href="#summary"> Profile Summary </a></li>
             <li><a href="#experience"> Work Experience </a></li>
             <li><a href="#education"> Education </a></li>
             <li><a href="#skills"> Skills </a></li>
         </ul>
-    </nav>
+    </header>
+
 
     <main>
-        <section>
-            <article id="summary">
-                <h2> Profile Summary </h2>
-                <p> Skilled and results-oriented Software Engineer with more than 15 years of experience working in a variety of environments with a breadth of programs and technologies. </p>
-            </article>
+        <h2>Profile Summary:</h2>
+        <article id="summary">
+            <p> Skilled and results-oriented Software Engineer with more than 15 years of experience working in a
+                variety of environments with a breadth of programs and technologies. </p>
+        </article>
 
-            <article id="experience">
-                <h2>Work Experience</h2>
+        <h2>Work Experience:</h2>
+        <article id="experience">
+            <div class="card">
+                <h3>Senior Software Engineer</h3>
+                <div><span>River Tech</span> | <span>Jul '19 - Current</span></div>
                 <div>
-                    <h3>Senior Software Engineer</h3>
-                    <div><span>River Tech</span> | <span>Jul '19 - Current</span></div>
-                    <div>
-                        <ul>
-                            <li>Identify and solve software issues in C++ and SQL in Unix and Linux environments</li>
-                            <li>Integrate code changes, test code changes, and document code changes</li>
-                            <li>Develop automation scripts to test storage appliances in Python</li>
-                            <li>Develop base framework with Java, JSP, Struts, CSS, HTML, JavaScript, Oracle, and MS SQL Server</li>
-                            <li>Practice agile development methodologies and work with current networking technologies </li>
-                        </ul>
-                    </div>
-
-                    <h3>Software Tech Lead</h3>
-                    <div><span>Tradelot</span> | <span>Aug '15 - Jul '19</span></div>
-                    <div>
-                        <ul>
-                            <li>Developed Perl and PHP scripts to translate data between applications</li>
-                            <li>Wrote, modified, and debugged software for clients</li>
-                            <li>Created and deployed web pages with HTML, JSP, JavaScript, and CSS</li>
-                            <li>Wrote Python scripts to load data and parse XML documents</li>
-                        </ul>
-                    </div>
-
-                    <h3>Software Engineer</h3>
-                    <div><span>Retail Ocean</span> | <span>Jan '13 - Aug '15</span></div>
-                    <div>
-                        <ul>
-                            <li>Developed code to complete assigned project by deadline</li>
-                            <li>Used Hadoop to build a scalable distributed data solution</li>
-                            <li>Utilized Python on Django web framework with Git to develop various front-end and back-end modules</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li>Identify and solve software issues in C++ and SQL in Unix and Linux environments</li>
+                        <li>Integrate code changes, test code changes, and document code changes</li>
+                        <li>Develop automation scripts to test storage appliances in Python</li>
+                        <li>Develop base framework with Java, JSP, Struts, CSS, HTML, JavaScript, Oracle, and MS SQL
+                            Server</li>
+                        <li>Practice agile development methodologies and work with current networking technologies
+                        </li>
+                    </ul>
                 </div>
-            </article>
+            </div>
+            <div class="card">
+                <h3>Software Tech Lead</h3>
+                <div><span>Tradelot</span> | <span>Aug '15 - Jul '19</span></div>
+                <div>
+                    <ul>
+                        <li>Developed Perl and PHP scripts to translate data between applications</li>
+                        <li>Wrote, modified, and debugged software for clients</li>
+                        <li>Created and deployed web pages with HTML, JSP, JavaScript, and CSS</li>
+                        <li>Wrote Python scripts to load data and parse XML documents</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Software Engineer</h3>
+                <div><span>Retail Ocean</span> | <span>Jan '13 - Aug '15</span></div>
+                <div>
+                    <ul>
+                        <li>Developed code to complete assigned project by deadline</li>
+                        <li>Used Hadoop to build a scalable distributed data solution</li>
+                        <li>Utilized Python on Django web framework with Git to develop various front-end and
+                            back-end modules</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
 
-            <article id="education">
-                <h2>Education </h2>
+        <h2>Education:</h2>
+        <article id="education" class="card">
+            <h3>Bachelor of Science in Computer Science</h3>
+            <div><span>Green Valley State</span> | <span>Aug '99 - Dec '02</span></div>
+        </article>
 
-                <h3>Bachelor of Science in Computer Science</h3>
-                <div><span>Green Valley State</span> | <span>Aug '99 - Dec '02</span></div>
-            </article>
-
-            <article id="skills">
-                <h2>Skills </h2>
-
-                <ul>
-                    <li>U.S. Dept. of Defence Top Secret Clearance</li>
-                    <li>Certified Scrum Master</li>
-                    <li>Cisco Certified Network Professional Routing and Switching</li>
-                    <li>Cisco Certified Network Professional Security</li>
-                </ul>
-            </article>
-        </section>
-
-        <section>
-            <h2>Contact Me:</h2>
-            <a href="https://github.com/ejzeronimo">GitHub</a>
-        </section>
-
-        <aside>
-            <div style="white-space: pre-wrap">The     cat   sat  on   the   mat.</div>
-        </aside>
+        <h2>Skills:</h2>
+        <article id="skills" class="card">
+            <ul>
+                <li>U.S. Dept. of Defence Top Secret Clearance</li>
+                <li>Certified Scrum Master</li>
+                <li>Cisco Certified Network Professional Routing and Switching</li>
+                <li>Cisco Certified Network Professional Security</li>
+            </ul>
+        </article>
     </main>
 
     <footer>
+        <ul id="external-links">
+            <li><a href="https://github.com/ejzeronimo">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/ethanzeronik/">LinkedIn</a></li>
+        </ul>
+
         <small>&copy; Copyright 2022, Ethan Zeronik</small>
     </footer>
 
