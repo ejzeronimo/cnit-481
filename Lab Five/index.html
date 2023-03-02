@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Web Design Practice</title>
+    <link href="styles/layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="logo">
+        My Food Trips
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Food Blogs</a>
+            </li>
+            <li>
+                <a href="">About Me</a>
+            </li>
+            <li>
+                <a href="">Recipes</a>
+            </li>
+            <li>
+                <a href="">Work with Me</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <article>
+            <h1>
+                Coffee and Croissants
+            </h1>
+            <!-- 
+                srcset allows you to set the path to the image and the width in pixels followed by a w
+                sizes allows you to set rules for sizing the image seperated by a comma
+                src is the path to the image
+                the alt is alternate text to show or read in case the image cannot be used
+            -->
+            <img
+            srcset="images/coffee-small.jpeg 640w"
+            sizes="(max-width: 700px) 60vw, 640px"
+            src="images/coffee-small.jpeg"
+            alt="coffee" class="feature" />
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!</p>
+            
+            <img
+                srcset="images/croissant-small.jpeg 640w"
+                sizes="(max-width: 700px) 60vw, 640px"
+                src="images/coffee-small.jpeg"
+                alt="coffee" class="feature" />
+            <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach
+                    avocado daikon
+                    napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach
+                    carrot soko.
+                    Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion
+                    chickpea gram
+                    corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot
+                    watercress.
+                    Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!</p>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!Lorem ipsum dolor, sit amet consectetur adipisicing elit. In, explicabo fuga est reprehenderit numquam laborum animi non nesciunt rerum veritatis itaque, nam iusto totam maxime tempora praesentium obcaecati ad cupiditate!</p>
+
+        </article>
+
+        <aside>
+            <h2>
+                More articles
+            </h2>
+            <ul class="article-list">
+                <li>
+                    <a href="">Article 1</a>
+                </li>
+                <li>
+                    <a href="">Article 1</a>
+                </li>
+                <li>
+                    <a href="">Article 1</a>
+                </li>
+                <li>
+                    <a href="">Article 1</a>
+                </li>
+                <li>
+                    <a href="">Article 1</a>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+</body>
+
+</html>
