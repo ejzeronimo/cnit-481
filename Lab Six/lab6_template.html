@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 6</title>
+</head>
+
+<body>
+    <form>
+        <label for="myName">Choose a name from this list or enter your own:</label>
+        <input list="names" id="myName" name="myName" />
+        <datalist id="names">
+
+        </datalist>
+        <br>
+
+        <label for="myLocation">Choose a location from this list or enter your own:</label>
+        <input list="locations" id="myLocation" name="myLocation" />
+        <datalist id="locations">
+
+        </datalist>
+        <br>
+
+        <label for="myTime">Choose a time from this list or enter your own:</label>
+        <input list="times" id="myTime" name="myTime" />
+        <datalist id="times">
+
+        </datalist>
+        <br>
+
+        <label for="myEvent">Choose an event from this list or enter your own:</label>
+        <input list="events" id="myEvent" name="myEvent" />
+        <datalist id="events">
+
+        </datalist>
+        <br>
+
+        <button id="generate">Generate a story</button>
+    </form>
+    <p id="story"></p>
+    <script>
+        // DO NOT CHANGE THE FOLLOWING CODE
+        function CreateOption(optionText) {
+            let newOption = document.createElement("option");
+            newOption.setAttribute("value", optionText);
+            return newOption;
+        }
+
+        function AddToOptionToList(listid, nameoption) {
+            const myList = document.getElementById(listid);
+            myList.appendChild(nameoption);
+        }
+
+        function UpdateStory(story) {
+            document.getElementById("story").innerHTML = story;
+        }
+
+        function Warning(message = "Some of the input values are empty!") {
+            alert(message);
+        }
+        // END OF DO NOT CHANGE
+
+        names = ["John", "Jane", "Bob", "Mary", "Zane"];
+        locations = ["Purdue", "New York", "Japan", "home"];
+        times = ["Saturday evening", "Monday morning", "Friday night"];
+        events = ["play games", "do laundry", "finish homework", "work out", "take a nap"];
+
+        for (i = 0; i < names.length; i++) {
+            AddToOptionToList("names", CreateOption(names[i]));
+        }
+
+        for (i = 0; i < locations.length; i++) {
+            AddToOptionToList("locations", CreateOption(locations[i]));
+        }
+
+        for (i = 0; i < times.length; i++) {
+            AddToOptionToList("times", CreateOption(times[i]));
+        }
+
+        for (i = 0; i < events.length; i++) {
+            AddToOptionToList("events", CreateOption(events[i]));
+        }
+
+        document.getElementById("generate").addEventListener("click", function (event) {
+            event.preventDefault();
+            const myName = document.getElementById("myName").value;
+            const myEvent = document.getElementById("myEvent").value;
+            const myLocation = document.getElementById("myLocation").value;
+            const myTime = document.getElementById("myTime").value;
+
+            let resultString = "";
+            let warnString = "";
+
+            // add name warning
+            warnString += myName == "" ? "name" : "";
+            // add event warning
+            warnString += myEvent == "" ? (warnString == "" ? "event" : ", event") : "";
+            // add location warning
+            warnString += myLocation == "" ? (warnString == "" ? "location" : ", location") : "";
+            // add time warning
+            warnString += myTime == "" ? (warnString == "" ? "time" : ", time") : "";
+
+            if (warnString != "") {
+                Warning(warnString + " are missing values!");
+            }
+            else {
+                resultString = myName + " went to " + myLocation + " on " + myTime + " to " + myEvent;
+
+                UpdateStory(resultString);
+            }
+
+            function findValueInArray(nums, target) {
+                let results = [];
+
+                for (i = 0; i < nums.length; i++) {
+                    if (nums[i] == target) {
+                        results.push(i);
+                    }
+                }
+
+                return results.length > 0 ? results : -1;
+            }
+
+            // returns [1,4]
+            console.log(findValueInArray([1, 2, 4, 6, 2, 3, 4], 2));
+            //returns -1
+            console.log(findValueInArray([1, 2, 4, 6, 2, 3, 4], 10));
+        });
+    </script>
+</body>
+
+</html>
