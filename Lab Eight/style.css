@@ -1,0 +1,55 @@
+body {
+    /* https://colorhunt.co/palette/fff4e0ffbf9bb460604d4d4d */
+    --text-primary: #FFF4E0;
+    --text-secondary: #FFBF9B;
+    --color-primary: #B46060;
+    --color-secondary: #4D4D4D;
+
+    color: var(--text-primary);
+    background-color: var(--color-secondary);
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* use to float items to the center of the page */
+main {
+    margin: auto;
+    padding: 1.5em;
+    max-width: 140ch;
+}
+
+/* class for default look of containers */
+.card {
+    width: calc(100% - 2em);
+
+    margin: auto;
+    padding: 1em;
+    border-radius: .5em;
+
+    background-color: var(--color-primary);
+}
+
+/* meant for holding cards side by side */
+.grid {
+    gap: 1em;
+    padding: 0;
+    margin-top: 1em;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+}
+
+#highest-bid-container>* {
+    text-align: center;
+    margin: auto;
+}
+
+#time-remaining>*{
+    margin: auto;
+}
+
+img {
+    width: 100%;
+
+    border-radius: 1em;
+}
