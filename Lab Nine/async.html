@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+  <body>
+    <header>
+      <img src="resources/youtube_logo.svg" alt="YouTube logo">
+      <form>
+        <input type="text" placeholder="Search">
+        <button type="submit">Search</button>
+      </form>
+      <img src="resources/profile.png" alt="Profile icon">
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Trending</a></li>
+        <!-- <li><a href="#">Subscriptions</a></li>
+        <li><a href="#">Library</a></li>
+        <li><a href="#">History</a></li> -->
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h1>Please specify your video preferences.</h1>
+        <form id="survey">
+          <div id="preference-survey"></div>
+          <input type="submit" value="submit">
+        </form>
+      </div>
+      <section id="videos">
+        <h2>Recommended</h2>
+      </section>
+    </main>
+    
+    <script src="createSurvey.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
