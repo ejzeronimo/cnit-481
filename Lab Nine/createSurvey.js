@@ -64,7 +64,7 @@ const video_categories = [
 const choices = ["like", "neutral", "dislike"];
 
 // NOTE: creating the survey
-const targetForm = document.getElementById("preference-survey");
+const targetFormDiv = document.getElementById("preference-survey");
 
 // iterate over the categories
 for (const category of video_categories) {
@@ -91,5 +91,5 @@ for (const category of video_categories) {
         catQuestion.appendChild(label);
     }
 
-    targetForm.appendChild(catQuestion);
+    targetFormDiv.appendChild(catQuestion);
 }
