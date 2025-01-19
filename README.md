@@ -9,7 +9,7 @@ Please do not use these labs or projects as your own, I answered all of these qu
 
 *I will try to go back and update questions that were incorrect.*
 ### Labs
-The lab folder should be structred as follows:
+The lab folder should be structured as follows:
 - Lab #
   - *.js
   - *.html
